@@ -14,7 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import { ViewcourseComponent } from './viewcourse/viewcourse.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ViewfriendComponent } from './viewfriend/viewfriend.component'
+import { ViewfriendComponent } from './viewfriend/viewfriend.component';
+import { EmployeeloginComponent } from './employeelogin/employeelogin.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -57,7 +58,8 @@ const myRoute:Routes=[
     AdminloginComponent,
     AdminnavbarComponent,
     ViewcourseComponent,
-    ViewfriendComponent
+    ViewfriendComponent,
+    EmployeeloginComponent
   ],
   imports: [
     BrowserModule,
