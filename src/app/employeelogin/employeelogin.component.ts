@@ -11,7 +11,7 @@ export class EmployeeloginComponent {
   id=""
   password=""
   constructor(private route:Router){}
-  adminLoginvalues =()=>
+  employeeLoginvalues =()=>
   {
     let data:any =
     {
