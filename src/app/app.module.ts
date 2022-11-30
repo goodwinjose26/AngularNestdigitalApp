@@ -13,7 +13,8 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import { ViewcourseComponent } from './viewcourse/viewcourse.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ViewfriendComponent } from './viewfriend/viewfriend.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -38,6 +39,10 @@ const myRoute:Routes=[
   {
     path:"viewcourse",
     component:ViewcourseComponent
+  },
+  {
+    path:"viewfriend",
+    component:ViewfriendComponent
   }
 ]
 
@@ -51,7 +56,8 @@ const myRoute:Routes=[
     GalleryComponent,
     AdminloginComponent,
     AdminnavbarComponent,
-    ViewcourseComponent
+    ViewcourseComponent,
+    ViewfriendComponent
   ],
   imports: [
     BrowserModule,
