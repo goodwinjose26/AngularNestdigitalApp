@@ -11,6 +11,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
+import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -42,7 +43,8 @@ const myRoute:Routes=[
     ContactusComponent,
     AboutusComponent,
     GalleryComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    AdminnavbarComponent
   ],
   imports: [
     BrowserModule,
