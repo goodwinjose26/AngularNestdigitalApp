@@ -7,6 +7,7 @@ import { HomenavbarComponent } from './homenavbar/homenavbar.component';
 import { HomecontentComponent } from './homecontent/homecontent.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactusComponent } from './contactus/contactus.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -15,6 +16,10 @@ const myRoute:Routes=[
   {
     path:"contactus",
     component:ContactusComponent
+  },
+  {
+    path:"aboutus",
+    component:AboutusComponent
   }
 ]
 
@@ -23,7 +28,8 @@ const myRoute:Routes=[
     AppComponent,
     HomenavbarComponent,
     HomecontentComponent,
-    ContactusComponent
+    ContactusComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
