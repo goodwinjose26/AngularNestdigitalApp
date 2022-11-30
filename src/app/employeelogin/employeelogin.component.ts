@@ -20,7 +20,7 @@ export class EmployeeloginComponent {
     console.log(data)
     if (this.id =="1122" && this.password=="12345") {
   
-this.route.navigate(["/viewcourhse"])      
+this.route.navigate(["/addcourse"])      
 
     } else {
       alert("invalid credentials")
