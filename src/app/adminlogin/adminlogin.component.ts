@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Routes } from '@angular/router';
+import { Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-adminlogin',
@@ -9,7 +9,7 @@ import { Routes } from '@angular/router';
 export class AdminloginComponent {
   username=""
   password=""
-  constructor(private route:Routes){}
+  constructor(private route:Router){}
   adminLoginvalues =()=>
   {
     let data:any =
