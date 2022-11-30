@@ -9,6 +9,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { FormsModule } from '@angular/forms';
 const myRoute:Routes=[
   {
     path:"",
@@ -25,6 +27,10 @@ const myRoute:Routes=[
   {
     path:"gallery",
     component:GalleryComponent
+  },
+  {
+    path:"adminlogin",
+    component:AdminloginComponent
   }
 ]
 
@@ -35,12 +41,14 @@ const myRoute:Routes=[
     HomecontentComponent,
     ContactusComponent,
     AboutusComponent,
-    GalleryComponent
+    GalleryComponent,
+    AdminloginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
