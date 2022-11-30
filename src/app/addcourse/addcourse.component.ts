@@ -15,7 +15,7 @@ export class AddcourseComponent {
   courseVenue=""
   constructor(private api:ApiService){}
 
-  readValues=()=>
+  addCourse=()=>
   {
     let data:any={"courseTitle":this.courseTitle,"courseDescription":this.courseDescription,"courseDuration":this.courseDuration,"courseDate":this.courseDate,"courseVenue":this.courseVenue}
     console.log(data)
