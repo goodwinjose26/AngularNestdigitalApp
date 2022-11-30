@@ -12,6 +12,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormsModule } from '@angular/forms';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
+import { ViewcourseComponent } from './viewcourse/viewcourse.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -32,6 +33,10 @@ const myRoute:Routes=[
   {
     path:"adminlogin",
     component:AdminloginComponent
+  },
+  {
+    path:"viewcourse",
+    component:ViewcourseComponent
   }
 ]
 
@@ -44,7 +49,8 @@ const myRoute:Routes=[
     AboutusComponent,
     GalleryComponent,
     AdminloginComponent,
-    AdminnavbarComponent
+    AdminnavbarComponent,
+    ViewcourseComponent
   ],
   imports: [
     BrowserModule,
